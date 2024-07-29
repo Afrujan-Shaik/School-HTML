@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Registration</title>
+        <style>
+            div{
+                padding-left: 20%;
+            }
+            body{
+                background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('img5.jpg');
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+                background-attachment:scroll;
+                color: rgb(179, 179, 169);
+            }
+            h1{
+                font-size: xx-large;
+                color:rgb(210, 210, 228);
+            }
+        </style>
+    </head>
+<body>
+    <center><h1>REGISTRATION FORM</h1></center><br>
+<form action="RegistrationSuccess.html">
+    <div>
+        Role :<select name="role" required>
+            <option value=""></option>
+            <option value="1">Teacher</option>
+            <option value="2">Student</option>
+            </select><br><br>
+        Username        : <input type="text" name="uname" placeholder="Create a username"><br><br>
+        Password : <input type="text" name="pass" placeholder="Create a Password"><br><br>
+        Name            : <input type="text" name="nname"><br><br>
+        Date-of-Birth   : <input type="date" name="Bname"><br><br>
+        Age             : <input type="text" col="10" rows="2"><br><br>
+        Gender          : <br><input type="radio" name="male" value="m">Male
+                          <br><input type="radio" name="female" value="f">Female
+                          <br><input type="radio" name="others" value="o">Others<br><br>
+        Mobile No       :<input type="tel" name="personal" id="per1" pattern="[0-9]{10}"
+                          title="The ten digits number"><br><br>
+        Email           : <input list="email" name="mymails">
+                            <datalist id="email">
+                                <option value="afru@gmail.com"></option>
+                                <option value="afru@yahoo.com"></option>
+                                <option value="afru@hotmail.com"></option>
+                                <option value="afru@mail.com"></option>
+                            </datalist><br><br>
+        Grade          : <select name="Grade">
+                            <option value=""></option>
+                            <option value="1">class-1</option>
+                            <option value="2">class-2</option>
+                            <option value="3">class-3</option>
+                            <option value="4">class-4</option>
+                            <option value="5">class-5</option>
+                            <option value="6">class-6</option>
+                            <option value="7">class-7</option>
+                            <option value="8">class-8</option>
+                            <option value="9">class-9</option>
+                            <option value="10">class-10</option>
+                         </select><br><br>
+        Languages       :<br><input type="checkbox" name="Telugu">Telugu
+                         <br><input type="checkbox" name="Hindi">Hindi
+                        <br> <input type="checkbox" name="English">English<br><br>
+        Address         :<br><textarea col="30" rows="5">Enter your permenant address</textarea>
+        <br><input type="submit" value="Submit">
+    </div>
+</form>
+<footer>
+    &copy; all rights of this website is reserved for me. 
+</footer>
+</body>
+</html>
